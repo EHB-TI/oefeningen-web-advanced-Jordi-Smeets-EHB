@@ -9,39 +9,36 @@
 
         <style>
             img.thumbnail {
-                width: 300px;
+                width: 100%;
                 object-fit: contain;
-                display: block;
             }
             img.profile-pic {
                 width: 75%;
                 border-radius: 50%;                
-
             }
             div.profile-pic {
-                display: inline-block;
-                width: 50px;
                 vertical-align: top;
-
-            }
-            div.video-info {
-                display: inline-block;
-                width: 240px;
-
-
             }
             div.thumbnail-row{
                 margin-bottom: 12px;
-
             }
-
             p{
                 font-family: Roboto, "Arial";
                 margin-top: 0;
                 margin-bottom: 0;
-
+            }
+            
+            .video-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 40px;
             }
 
+            .video-info-grid{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
             .video-title{
                 margin-top: 0;
                 font-weight: 500;
@@ -56,29 +53,28 @@
             .video-author{
                 margin-bottom: 4px;
             }
-
-            .video-preview{
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
-
-            }
             .search-bar{
                 display: block;
-                
             }
 
         </style>
     </head>
 
     <body>
-        <input class="search-bar" type="text" placeholder="Search">
+        
+        <div class="header">
+            <div class="left-section"></div>
+            <div class="center-section"></div>
+                <input class="search-bar" type="text" placeholder="Search">
+            <div class="right-section"></div>
+            
+        </div>
+        <div class="video-grid">
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/book.webp">
             </div>
-            <div>
+            <div class="video-info-grid">
                 
                 <div class="profile-pic"> 
                     <img  class="profile-pic" src="Channel-Pictures/john duckett.jpg">
@@ -101,7 +97,7 @@
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="images/火炎放射器.webp">
                 </div>
-                <div>
+                <div class="video-info-grid">
                     
                     <div class="profile-pic"> 
                         <img  class="profile-pic" src="Channel-Pictures/ujack.jpg">
@@ -119,6 +115,97 @@
                     </div>        
                 </div>
             </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/book.webp">
+                </div>
+                <div class="video-info-grid">
+                    
+                    <div class="profile-pic"> 
+                        <img  class="profile-pic" src="Channel-Pictures/john duckett.jpg">
+                    </div>
+                    <div  class="video-info"> 
+                        <p class="video-title">
+                            Boek: HTML and CSS: Design and Build Websites
+                        </p>
+                        <p class="video-author">
+                            Jon Duckett
+                        </p>
+                        <p class="video-stats">
+                            3.4M views &#183; 6 months ago 
+                        </p>
+                    </div>        
+                </div>
+            </div>
+    
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="images/火炎放射器.webp">
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="profile-pic"> 
+                            <img  class="profile-pic" src="Channel-Pictures/ujack.jpg">
+                        </div>
+                        <div  class="video-info"> 
+                            <p class="video-title">
+                                スズメバチに隊員が襲われたので火炎放射器で報復した 【キャンプ場開拓】 #075
+                            </p>
+                            <p class="video-author">
+                                UJack channel
+                            </p>
+                            <p class="video-stats">
+                                1.261.182 views &#183; 6 months ago 
+                            </p>
+                        </div>        
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="images/book.webp">
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="profile-pic"> 
+                            <img  class="profile-pic" src="Channel-Pictures/john duckett.jpg">
+                        </div>
+                        <div  class="video-info"> 
+                            <p class="video-title">
+                                Boek: HTML and CSS: Design and Build Websites
+                            </p>
+                            <p class="video-author">
+                                Jon Duckett
+                            </p>
+                            <p class="video-stats">
+                                3.4M views &#183; 6 months ago 
+                            </p>
+                        </div>        
+                    </div>
+                </div>
+        
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img class="thumbnail" src="images/火炎放射器.webp">
+                        </div>
+                        <div class="video-info-grid">
+                            
+                            <div class="profile-pic"> 
+                                <img  class="profile-pic" src="Channel-Pictures/ujack.jpg">
+                            </div>
+                            <div  class="video-info"> 
+                                <p class="video-title">
+                                    スズメバチに隊員が襲われたので火炎放射器で報復した 【キャンプ場開拓】 #075
+                                </p>
+                                <p class="video-author">
+                                    UJack channel
+                                </p>
+                                <p class="video-stats">
+                                    1.261.182 views &#183; 6 months ago 
+                                </p>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
 
     </body>
 
