@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> YouTube clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <style>
+            img.thumbnail {
+                width: 300px;
+                object-fit: contain;
+                display: block;
+            }
+            img.profile-pic {
+                width: 75%;
+                border-radius: 50%;                
+
+            }
+            div.profile-pic {
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+
+            }
+            div.video-info {
+                display: inline-block;
+                width: 240px;
+
+
+            }
+            div.thumbnail-row{
+                margin-bottom: 12px;
+
+            }
+
+            p{
+                font-family: Roboto, "Arial";
+                margin-top: 0;
+                margin-bottom: 0;
+
+            }
+
+            .video-title{
+                margin-top: 0;
+                font-weight: 500;
+                line-height: 20px;
+                margin-bottom: 12px;
+            } 
+            .video-author,
+            .video-stats{
+                font-size: 12px;
+                color: rgb(96, 96, 96);
+            } 
+            .video-author{
+                margin-bottom: 4px;
+            }
+
+            .video-preview{
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+
+            }
+            .search-bar{
+                display: block;
+                
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <input class="search-bar" type="text" placeholder="Search">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="images/book.webp">
+            </div>
+            <div>
+                
+                <div class="profile-pic"> 
+                    <img  class="profile-pic" src="Channel-Pictures/john duckett.jpg">
+                </div>
+                <div  class="video-info"> 
+                    <p class="video-title">
+                        Boek: HTML and CSS: Design and Build Websites
+                    </p>
+                    <p class="video-author">
+                        Jon Duckett
+                    </p>
+                    <p class="video-stats">
+                        3.4M views &#183; 6 months ago 
+                    </p>
+                </div>        
+            </div>
+        </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="images/火炎放射器.webp">
+                </div>
+                <div>
+                    
+                    <div class="profile-pic"> 
+                        <img  class="profile-pic" src="Channel-Pictures/ujack.jpg">
+                    </div>
+                    <div  class="video-info"> 
+                        <p class="video-title">
+                            スズメバチに隊員が襲われたので火炎放射器で報復した 【キャンプ場開拓】 #075
+                        </p>
+                        <p class="video-author">
+                            UJack channel
+                        </p>
+                        <p class="video-stats">
+                            1.261.182 views &#183; 6 months ago 
+                        </p>
+                    </div>        
+                </div>
+            </div>
+
+    </body>
+
+</html>
+
