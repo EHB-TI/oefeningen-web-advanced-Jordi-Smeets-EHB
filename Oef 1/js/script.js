@@ -63,3 +63,79 @@ capitalize("smeets jordi");
 capitalize("mike derycke");
 capitalize("   max power    ");
 capitalize(" judas de verrader");
+
+//oef 1.9
+
+function changeEssentials(sentence){
+  sentence=sentence.replace("Essentials","Advanced");
+  console.log(sentence)
+}
+changeEssentials("Javascript is the main focus of Web Essentials");
+
+//oef 1.10
+
+function longestCountryCalc(...countries){
+  let longestCountry=''
+
+  for(country of countries )
+  {
+    length= country.length;
+
+    if (length > longestCountry.length)
+    {
+      longestCountry=country;
+    }
+  }
+  console.log(longestCountry);
+
+}
+longestCountryCalc('Nederland','Rusland','Japan','Turkmenistan')
+
+//oef 1.12
+
+function transformDate(date)
+{
+  let day= date.getDate();
+  let month= date.getMonth();
+  let year= date.getFullYear();
+  
+  const months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  month= months[month];
+
+  fulldate= `${day} ${month} ${year}`;
+  return fulldate;
+}
+
+const date = new Date();
+console.log(transformDate(date));
+
+//oef 1.13
+
+function calcBirthday(birthday){
+  const now = new Date();
+
+  let day= birthday.getDate();
+  let month= birthday.getMonth();
+  let year= now.getFullYear();
+  
+  
+  let nextBirthday = new Date(year,month,day);
+
+  // check if birthday has passed this year
+  if(nextBirthday.getTime() < now.getTime() )
+  {
+    nextBirthday = new Date(year+1,month,day);
+  }
+  
+  // time in miliseconds
+  let delta =nextBirthday.getTime() - now.getTime();
+  let days= delta/86400000;
+
+  return Math.round(days);
+}
+// note months -> starts at 0 -> so - 1
+const birthday= new Date(1992,04,10);
+console.log(birthday)
+
+console.log(calcBirthday(birthday));
