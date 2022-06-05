@@ -132,10 +132,8 @@ function calcBirthday(birthday){
   let delta =nextBirthday.getTime() - now.getTime();
   let days= delta/86400000;
 
-  return Math.round(days);
+  return `Nog ${Math.round(days)} dagen en dan is het feest!`;
 }
 // note months -> starts at 0 -> so - 1
 const birthday= new Date(1992,04,10);
-console.log(birthday)
-
 console.log(calcBirthday(birthday));
