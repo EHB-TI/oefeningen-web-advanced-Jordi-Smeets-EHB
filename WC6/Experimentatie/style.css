@@ -1,0 +1,34 @@
+div{
+	width: 150px;
+	height: 150px;
+	background-color: hotpink;
+	animation-name: moving;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+@keyframes moving {
+	0%{
+		transform: translateX(0px);
+		background-color: red;
+	}
+
+	25%{
+		transform: translateX(500px) rotate(1turn);
+		background-color: orangered; 
+		border-radius: 50%;
+	}
+	50%{
+		transform: translate(500px, 500px) rotate(2turn);
+		background-color: fuchsia;
+		border-radius: 50%;
+	}
+	75%{
+		transform: translate(0px, 500px);
+		background-color: pink;
+	}
+	100%{
+		transform: translate(0px,0px);
+	}
+}
+	
