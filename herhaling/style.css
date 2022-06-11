@@ -1,0 +1,45 @@
+body{
+    margin:0;
+
+
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:10% 90%;
+    grid-template-areas:
+    "header header header"
+    "left-side center-content right-side";
+    margin:0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+#header{
+    grid-area: header;
+
+
+}
+
+#left-side{
+    grid-area: left-side;
+
+}
+
+
+#center{
+    grid-area: center-content;
+}
+
+#right-side{
+    grid-area: right-side;
+}
+
+#input-boxes{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 5px;
+grid-template-rows : repeat(3,30px);
+
+}
