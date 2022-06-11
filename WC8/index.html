@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WC8</title>
+    <style>
+
+      body{
+        margin: 0px 0px;
+        padding: 0 0;
+      }
+      
+      #gridContainer {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 15% 55% 30%;
+        grid-template-areas:
+          "header header header"
+          "left-side photo-list album-list"
+          "left-side personal-album album-list";
+
+        height: 100vh;
+
+      }
+      #header {
+        grid-area: header;
+        border-bottom: 4px solid black;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      #title{
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+        font-size: 4em;
+      }
+
+      #left-side {
+        grid-area: left-side;
+      }
+
+      #photo-list {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        grid-area: photo-list;
+        padding-bottom: 4em;
+        align-self: center;
+
+      }
+
+      #album-list {
+        grid-area: album-list;
+        font-size: 2em;
+      }
+
+      #personal-album {
+        grid-area: personal-album;
+        display:flex;
+        flex-direction: row;
+        align-self: center;
+        display: block;
+      }
+
+      img{
+        margin: 0.5em;
+      }
+      .selected {
+        background-color: rgba(60, 60, 197, 0.411);
+      }
+      .borderImage{
+        color: #000;
+        border-width: 3px;
+        border-style: solid;
+      }
+      .input-personal-album{
+        font-size: 2em;
+        margin-bottom: 1em;
+        display: block
+      }
+
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="gridContainer">
+      <div id="header">
+        <h1 id="title">Examen WDA</h1>
+      </div>
+      <div id="left-side"></div>
+      <div id="photo-list"></div>
+      <div id="album-list"></div>
+      <div id="personal-album">
+        <div class="input-personal-album">
+          <label for="name">Naam:</label>
+          <input id="name" type="text">
+          <button id="save-album">Opslaan</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -26,7 +26,7 @@ function compareNumber(nr) {
 
 }
 
-document.getElementById('numberForm').addEventListener('submit', (event)=>{
+document.getElementById('numberForm').addEventListener('submit',(event)=>{
     event.preventDefault();
     let number = parseInt(document.getElementById('number').value);
     let result = compareNumber(number);
