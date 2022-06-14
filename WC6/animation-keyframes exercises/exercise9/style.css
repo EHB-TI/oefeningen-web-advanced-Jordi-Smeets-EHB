@@ -1,0 +1,15 @@
+*{
+    margin:0
+}
+.wallpaper {
+	height: 100vh;
+	background-image: url(bg.png);
+    animation: animated 15s linear infinite;
+}
+
+@keyframes animated{
+
+    from { background-position: 0 0 }
+
+	to { background-position: 800px 600px; }
+}

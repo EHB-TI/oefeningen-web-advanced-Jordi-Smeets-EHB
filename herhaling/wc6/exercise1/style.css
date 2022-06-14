@@ -1,0 +1,16 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: #351435;
+	font-family: sans-serif;
+	font-size: 40px;
+	border: 3px solid #351435;
+	padding: 40px 80px;
+	position: relative;
+}

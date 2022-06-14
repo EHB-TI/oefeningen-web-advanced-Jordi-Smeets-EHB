@@ -40,6 +40,6 @@ body{
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-gap: 5px;
-grid-template-rows : repeat(3,30px);
+grid-template-rows : repeat(5,30px);
 
 }

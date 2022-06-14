@@ -1,0 +1,35 @@
+.container {
+    background-color: rgb(38,222,129);
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    perspective: 260px;
+    
+}
+
+.loading {
+    align-self: center;
+    width: 30vh;
+    height: 30vh;
+    background-color: white;
+    border-radius: 12px;
+    animation: threeDim 2s linear infinite;
+
+
+}
+
+@keyframes threeDim {
+    from{
+        transform: rotateX(0deg) rotateY(0);
+    }
+
+    50%{
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+
+    to{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+    
+}
